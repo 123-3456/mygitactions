@@ -16,4 +16,6 @@ jobs:
         with:
           # Include specific languages and directories you want to lint
           languages: python, javascript
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_sha: ${{ github.sha }}
         
